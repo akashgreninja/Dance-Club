@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts
+    script (src='/static/script.js  ')
+
+block style
+    style
+        include ../static/style.css
+
+block content 
+   
+    section#intro
+        div Welcome to the dance club
+        div#dance Dance Dance Dance...
+
+    section#mission
+        h2 Our Mission  
+        div.card 
+            h3 Dance perfection  
+            div.card-box 
+                div.img-go
+                    img.dance1(src="/static/dance2.png" )
+                div.card-content 
+                    p  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit incidunt dolor eum eius aspernatur modi, quidem tempo        
+        div.card 
+            h3 Dance as you like
+            div.card-box 
+                div.img-go
+                    img.dance1(src="/static/dance3.png")
+                div.card-content  
+                    p  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit incidunt dolor eum eius aspernatur 
+        div.card 
+            h3 Amazing
+            div.card-box 
+                div.img-go 
+                    img.dance1(src="/static/dance2.png")  
+                div.card-content 
+                    p  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit incidunt dolor eum eius aspernatur modi, quidem tempo              
+    section#sponsorer
+        h2 Our Sponsorers
+        div.sponsorer-main 
+            img.company(src="/static/microsoft.png")
+            img.company(src="/static/microsoft-2.png")
+            img.company(src="/static/hp.png")
+            img.company(src="/static/trash.png")            
+
+block foot 
+        

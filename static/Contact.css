@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin:  12px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+      
+
+}
+.MyInput{
+    width: 33%;
+    padding: 9px;
+    margin: 10px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 18px;
+}
+.myText{
+    width: 33%;
+    padding: 9px;
+    margin: 10px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 18px;
+
+}
+
+.btn{
+    padding: 9px 7px 9px 9px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: #9f2828;
+    color: white;
+    cursor: pointer;
+}
+
+.parent{
+    min-height: 80vh;
+    margin-top: 34px;
+    
+}

@@ -1,0 +1,27 @@
+doctype html
+html
+
+  head
+    link(rel="shortcut icon", href="static/favicon.ico", type="image/x-icon")
+    title Dance Club
+    block scripts
+    block style
+      //- script(src='/jquery.js')
+  body
+    nav#navbar
+    
+        ul 
+            div#logo 
+                img#hehe(src="/static/dance1.png", alt="" )
+                | ADA
+            li #[a(href="/") Home ]
+            li #[a(href="/") About]
+            li #[a(href="/contact") Contact Us]
+            li #[a(href="/") class info]
+            li #[a(href="/") Services]
+    block content
+
+    block foot
+    footer#footer
+        | Copyright © 2022 Greninja.com |All rights reserved   
+
