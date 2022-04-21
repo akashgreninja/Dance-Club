@@ -10,7 +10,7 @@ const res = require("express/lib/response");
 mongoose.connect("mongodb://localhost:27017/ContactDance");
 
 const app = express();
-const port = 80;
+const port = process.env.PORT || 5000 
 
 //schemas
 
