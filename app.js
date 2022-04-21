@@ -51,7 +51,7 @@ app.post("/contact", (req, res) => {
   
     .then(() => {
       // res.status(200).render("contact.pug")
-      res.status(200).send("saved");
+      res.status(200).render("contact.pug")
     })
     
 });
