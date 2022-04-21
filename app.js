@@ -7,7 +7,7 @@ const alert = require('alert');
 const internal = require("stream");
 const res = require("express/lib/response");
 
-mongoose.connect("mongodb://localhost:27017/ContactDance");
+mongoose.connect(process.env.DATABASE || "mongodb+srv://Akashgreninja:Pokemonprimape%4013@cluster0.bdfqg.mongodb.net/ContactDance");
 
 const app = express();
 const port = process.env.PORT || 5000
