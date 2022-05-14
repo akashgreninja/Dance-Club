@@ -10,24 +10,23 @@ const res = require("express/lib/response");
 // databaselocal=mongodb://localhost/ContactDance
 mongoose.connect(
   process.env.DATABASE ||
-  "mongodb+srv://Akashgreninja:Pokemonprimape%4013@cluster0.bdfqg.mongodb.net/ContactDance"
+    "mongodb+srv://Akashgreninja:Pokemonprimape%4013@cluster0.bdfqg.mongodb.net/ContactDance"
 );
 
 // mongoose.connect("mongodb://localhost/ContactDance")
 
 const app = express();
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5000;
 // const port = 8000;
 
 //schemas
 
 const ContactSchema = new mongoose.Schema({
-  name:String,
+  name: String,
   phone: String,
   email: String,
-  address:String,
-  concern: String
-  
+  address: String,
+  concern: String,
 });
 const Contact = mongoose.model("Contact", ContactSchema);
 
@@ -48,12 +47,10 @@ app.get("/contact", (req, res) => {
 app.post("/contact", (req, res) => {
   var Data = new Contact(req.body);
   Data.save()
-  
-    .then(() => {
-      // res.status(200).render("contact.pug")
-      res.status(200).render("contact.pug")
-    })
-    
+  .then(() => {
+    // res.status(200).render("contact.pug")
+    res.status(200).render("contact.pug");
+  });
 });
 
 app.listen(port, () => {
