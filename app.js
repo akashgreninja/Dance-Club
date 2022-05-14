@@ -10,7 +10,7 @@ const res = require("express/lib/response");
 // databaselocal=mongodb://localhost/ContactDance
 mongoose.connect(
   process.env.DATABASE ||
-    "mongodb+srv://Akashgreninja:Pokemonprimape%4013@cluster0.bdfqg.mongodb.net/ContactDance"
+    "Your cloud id"
 );
 
 // mongoose.connect("mongodb://localhost/ContactDance")
